@@ -1,3 +1,4 @@
+/* GLOBAL SETTINGS */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@
   --Hover-blue: rgb(122, 105, 199);
 }
 
+/* MAIN BODY */
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
@@ -21,6 +23,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* CARD CONTAINER */
 .container {
   display: flex;
   flex-direction: column;
@@ -54,6 +57,7 @@ body {
   color: var(--Desaturated-blue);
 }
 
+/* PLAN BOX */
 .plan-pricing {
   margin: auto;
   padding: 15px;
@@ -93,6 +97,7 @@ body {
   text-decoration: none;
 }
 
+/* PAYMENT BUTTON */
 .payment-button {
   border: none;
   font-weight: 700;
@@ -111,6 +116,7 @@ body {
   background-color: var(--Hover-blue);
 }
 
+/* CANCEL ORDER */
 .cancel-order-link {
   font-size: 14px;
   font-weight: 700;
@@ -122,6 +128,7 @@ body {
   color: #000;
 }
 
+/* FOOTER */
 .attribution {
   font-size: 11px;
   text-align: center;
