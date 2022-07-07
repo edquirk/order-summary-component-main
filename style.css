@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-Blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --Hover-blue: rgb(122, 105, 199);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-color: var(--Pale-Blue);
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  text-align: center;
+  background-color: #fff;
+  margin: 175px auto;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.illustration-img {
+  max-width: 100%;
+}
+
+.container-summary {
+  max-width: 80%;
+  margin: 30px auto;
+}
+
+.summary-text {
+  color: var(--Dark-blue);
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.description-text {
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  color: var(--Desaturated-blue);
+}
+
+.plan-pricing {
+  margin: auto;
+  padding: 15px;
+  max-width: 100%;
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+}
+
+.left-side {
+  display: flex;
+  gap: 10px;
+}
+
+.plan-text {
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+.price {
+  color: var(--Desaturated-blue);
+}
+
+.change-link {
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: underline;
+  color: var(--Bright-blue);
+}
+
+.change-link:hover {
+  color: var(--Hover-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.payment-button {
+  border: none;
+  font-weight: 700;
+  padding: 10px 50px;
+  border-radius: 0.5rem;
+  margin: auto;
+  color: var(--Very-pale-blue);
+  background-color: var(--Bright-blue);
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.payment-button:hover {
+  cursor: pointer;
+  background-color: var(--Hover-blue);
+}
+
+.cancel-order-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+}
+
+.cancel-order-link:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
